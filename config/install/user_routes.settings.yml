@@ -1,0 +1,4 @@
+user_login: /account/login
+user_register: /account/register
+user_logout: /account/logout
+user_pass: /account/password-reset

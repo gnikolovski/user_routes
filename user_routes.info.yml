@@ -1,0 +1,6 @@
+name: 'User Routes'
+type: module
+description: 'Alters existing user routes.'
+package: 'Other'
+core: 8.x
+configure: user_routes.admin_settings

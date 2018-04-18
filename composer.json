@@ -1,0 +1,16 @@
+{
+    "name": "gnikolovski/user_routes",
+    "description": "Drupal 8 - Alters existing user routes.",
+    "type": "drupal-module",
+    "require": {
+        "drupal/core": "^8.5"
+    },
+    "authors": [
+        {
+            "name": "Goran Nikolovski",
+            "email": "nikolovski84@gmail.com",
+            "homepage": "http://gorannikolovski.com",
+            "role": "Developer"
+        }
+    ]
+}

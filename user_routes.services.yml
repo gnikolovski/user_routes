@@ -1,0 +1,6 @@
+services:
+  user_routes.route_subscriber:
+    class: Drupal\user_routes\Routing\RouteSubscriber
+    arguments: ['@config.factory']
+    tags:
+      - { name: event_subscriber }

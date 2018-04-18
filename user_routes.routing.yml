@@ -1,0 +1,9 @@
+user_routes.admin_settings:
+  path: '/admin/config/system/user-routes'
+  defaults:
+    _form: '\Drupal\user_routes\Form\SettingsForm'
+    _title: 'User routes'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE

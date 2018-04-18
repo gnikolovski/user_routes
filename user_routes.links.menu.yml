@@ -1,0 +1,5 @@
+user_routes.admin_settings:
+  title: 'User routes'
+  description: 'Alter existing user routes.'
+  route_name: user_routes.admin_settings
+  parent: 'system.admin_config_system'
