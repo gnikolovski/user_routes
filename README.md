@@ -24,7 +24,7 @@ Include this Github repo in your composer.json file
 And then use this command to install the module
 
 ```
-composer require gnikolovski/user_routes
+composer require gnikolovski/user_routes:dev-master
 ```
 
 Module configuration link is here
