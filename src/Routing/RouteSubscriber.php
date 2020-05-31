@@ -12,6 +12,8 @@ use Symfony\Component\Routing\RouteCollection;
 class RouteSubscriber extends RouteSubscriberBase {
 
   /**
+   * The config factory.
+   *
    * @var \Drupal\Core\Config\ConfigFactory
    */
   protected $configFactory;
@@ -27,8 +29,8 @@ class RouteSubscriber extends RouteSubscriberBase {
   }
 
   /**
-  * {@inheritdoc}
-  */
+   * {@inheritdoc}
+   */
   protected function alterRoutes(RouteCollection $collection) {
     $user_routes_config = $this->configFactory
       ->get('user_routes.settings')
