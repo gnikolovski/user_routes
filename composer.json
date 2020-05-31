@@ -1,6 +1,6 @@
 {
     "name": "gnikolovski/user_routes",
-    "description": "Drupal 8 - Alters existing user routes.",
+    "description": "Drupal 8/9 - Alters existing user routes.",
     "type": "drupal-module",
     "homepage": "https://github.com/gnikolovski/user_routes",
     "authors": [
