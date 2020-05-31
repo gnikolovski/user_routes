@@ -3,4 +3,5 @@ type: module
 description: 'Alters existing user routes.'
 package: 'Other'
 core: 8.x
+core_version_requirement: ^8 || ^9
 configure: user_routes.admin_settings

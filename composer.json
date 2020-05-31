@@ -2,15 +2,22 @@
     "name": "gnikolovski/user_routes",
     "description": "Drupal 8 - Alters existing user routes.",
     "type": "drupal-module",
-    "require": {
-        "drupal/core": "^8.5"
-    },
+    "homepage": "https://github.com/gnikolovski/user_routes",
     "authors": [
         {
             "name": "Goran Nikolovski",
-            "email": "nikolovski84@gmail.com",
-            "homepage": "http://gorannikolovski.com",
+            "email": "goran@gorannikolovski.com",
+            "homepage": "https://gorannikolovski.com",
             "role": "Developer"
         }
-    ]
+    ],
+    "support": {
+        "issues": "https://github.com/gnikolovski/user_routes/issues",
+        "email": "goran@gorannikolovski.com"
+    },
+    "license": "GPL-2.0+",
+    "minimum-stability": "dev",
+    "require": {
+        "drupal/core": "^8 || ^9"
+    }
 }
