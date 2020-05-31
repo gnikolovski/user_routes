@@ -14,27 +14,29 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 class SettingsForm extends ConfigFormBase implements ContainerInjectionInterface {
 
   /**
+   * The route builder.
+   *
    * @var \Drupal\Core\Routing\RouteBuilderInterface
    */
   protected $routerBuilder;
 
   /**
-   * Constructs a new SettingsForm object.
-   *
-   * @param \Drupal\Core\Routing\RouteBuilderInterface $router_builder
-   *   Route builder.
-   */
-  public function __construct(RouteBuilderInterface $router_builder) {
-    $this->routerBuilder = $router_builder;
-  }
-
-  /**
    * {@inheritdoc}
    */
   public static function create(ContainerInterface $container) {
-    return new static(
-      $container->get('router.builder')
-    );
+    $instance = parent::create($container);
+    $instance->setRouteBuilder($container->get('router.builder'));
+    return $instance;
+  }
+
+  /**
+   * Sets route builder.
+   *
+   * @param \Drupal\Core\Routing\RouteBuilderInterface $router_builder
+   *   The route builder.
+   */
+  public function setRouteBuilder(RouteBuilderInterface $router_builder) {
+    $this->routerBuilder = $router_builder;
   }
 
   /**
